@@ -1,0 +1,82 @@
+*{
+  margin: 0;
+  padding: 0;  
+}
+
+body{
+font-family: Barlow Semi Condensed; 
+font: 13px; 
+padding-top: 2.5rem;
+padding-bottom: 1rem;    
+}
+.container{
+ max-width: 1400px;
+ padding: 6.5rem;
+ margin-bottom: 1.3rem;
+ margin-left: auto;
+ margin-right: auto;
+ display: grid;
+ grid-template-columns: repeat(4, 1fr);
+ grid-template-rows: auto;
+ grid-template-areas: 
+ "firstgrid firstgrid secondgrid fiftgrid"
+ "firstgrid firstgrid secondgrid fiftgrid"
+ "thirdgrid forthgrid forthgrid fiftgrid";
+ gap: 10px;
+ height: auto;
+ background-color:hsl(210, 46%, 95%);
+}
+
+.firstgrid{
+grid-area: firstgrid;
+background-color: hsl(263, 55%, 52%);
+color: white;
+background-image: url(./images/bg-pattern-quotation.svg);
+background-repeat: no-repeat;
+background-position: top right;
+background-size: 122px;
+
+}
+.secondgrid{
+grid-area: secondgrid;
+background-color: hsl(217, 19%, 35%);
+color: white;
+}
+.thirdgrid{
+grid-area: thirdgrid;
+background-color:white;
+
+}
+.forthgrid{
+grid-area: forthgrid;
+background-color:  hsl(219, 29%, 14%);
+color: white;
+}
+
+.fiftgrid{
+  grid-area: fiftgrid;
+  background-color: hsl(0, 0%, 100%);
+}
+.firstgrid, .secondgrid, .thirdgrid, .forthgrid, .fiftgrid{
+  border-radius: 5px;
+  padding: 30px;
+} 
+img{
+  border-radius: 50px;
+}
+
+/* <style>
+  @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=League+Spartan:wght@400;500;700&family=Lexend+Deca&display=swap');
+</style> */
+
+
+/* @media screen and (max-width: 991px) {
+  grid-template-columns: minmax(400px, 1fr);
+  grid-template-areas: 
+  "firstgrid"
+  "secondgrid"
+  "thirdgrid"
+  "forthgrid"
+  "fiftgrid";
+}
+ */
